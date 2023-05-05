@@ -24,9 +24,23 @@ function Home() {
 
     return (
         <>
-        <Nav />
-            <div className="d-flex justify-content-center align-items-center" style={{ height: "100vh" }}>
-                <img className="nasa-image img-fluid" src={data.url} alt="NASA" />
+            <Nav />
+            <div className="container">
+                <div className="row align-items-center">
+                    <div className="col col-6">
+                        <div className="d-flex align-items-center" style={{ height: "100vh" }}>
+                            <img className="nasa-image img-fluid" src={data.url} alt="NASA" />
+                        </div>
+                    </div>
+                    <div className="card col-6 h-100">
+                        <h4 className="col col-6 card-title text-white">
+                            {data.title}
+                            <p className="pt-4">Date: {data.date}</p>
+                        </h4>
+                        <p className="card-text text-white">{data.explanation}
+                        </p>
+                    </div>
+                </div>
             </div>
         </>
     )
