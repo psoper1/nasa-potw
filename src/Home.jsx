@@ -25,6 +25,7 @@ function Home() {
     return (
         <>
             <Nav />
+            <h1 className="title text-white d-flex justify-content-center">NASA Picture of the Day</h1>
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col col-6">
